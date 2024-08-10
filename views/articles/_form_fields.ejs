@@ -1,0 +1,20 @@
+<body class="bg-image" 
+style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+       height: 100vh">
+
+<div class="form-group">
+    <h4 foo="title"><span class="badge badge-success">Title</span></h4>
+    <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control border border-warning" >
+</div>
+<div class="form-group">
+    <h4 foo="description"><span class="badge badge-success">Description</span></h4>
+    <textarea name="description" id="description" class="form-control border border-warning" rows="8"><%= article.description %></textarea>
+</div>
+<div class="form-group">
+    <h4 foo="markdown"><span class="badge badge-success">Markdown</span></h4>
+    <textarea required name="markdown" id="markdown" class="form-control border border-warning"><%= article.markdown %></textarea>
+</div>
+
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
+</body>
